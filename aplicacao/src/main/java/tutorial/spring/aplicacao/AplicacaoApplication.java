@@ -8,7 +8,8 @@ import org.springframework.context.ApplicationContext;
 public class AplicacaoApplication {
 
 	public static void main(String[] args) {
-		ApplicationContext applicationContext = SpringApplication.run(AplicacaoApplication.class, args);
+		ApplicationContext applicationContext = SpringApplication
+				.run(AplicacaoApplication.class, args);
 		ClasseA objetoA = applicationContext.getBean(ClasseA.class);
 		objetoA.execute();
 	}
